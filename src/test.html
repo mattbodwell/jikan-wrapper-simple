@@ -1,0 +1,19 @@
+<script src="jikan.js"></script>
+
+<script>
+var mangaId = 1;
+var query = "My Hero Academia";
+
+
+const JReq = new Jikan();
+
+var testFunction = (response) =>{
+    console.log(response);
+}
+
+JReq.getMangaById(mangaId,testFunction);
+JReq.getMangaResommendations(mangaId,testFunction);
+JReq.searchManga(query,testFunction);
+
+
+</script>
